@@ -9,7 +9,7 @@ st.title("MSFT 5-Year Average Stock Price")
 data = yf.Ticker("MSFT").history(period="5y")
 if not data.empty:
   
-# Calculate the total average closing price
+# Calculate the total average closing pric
 overall_average = data['Close'].mean()
 
 # Print the result directly to the screen
